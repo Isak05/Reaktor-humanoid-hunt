@@ -31,7 +31,7 @@ var password = "";
 for(var i = 0; i < input.length; i++) {
 	var foundValid = false;
 	var offset = 0;
-	for(var j = 0; j < 5000; j++) {
+	while(true) {
 		var value = getByte(input[i], offset);
 		if(value >= 40) {
 			if(foundValid) {
